@@ -48,17 +48,26 @@ title: Fusionborg
     <div class="body">
       
       <section class="main fl">
-      
+      {% for post in site.categories.projects %}
         <section class="fl">
-          <h2 class="centered borderBottom pb nm"><a href="#"><img src="image/project_fbmvc.png" alt="FBMVC" /></a></h2>
-          <p class="borderBottom bmb"><img class="block" src="http://www.placekitten.com/270/220" alt="" /></p>
-          <p class="bmb">Tired of using tools patched and extended to perform jobs for which they were never intended? The Fusionbox Framework (FBMVC) is a programmer's dream come true. </p>
-          <p class="centered bmb"><a class="button image fixed100" href="#">Learn More<img src="image/button_arrow.png" alt="&raquo;" /></a></p>
-          <p class="centered nm"><a class="button image fixed100" href="#">Find it on<img src="image/github.gif" alt="github" /></a></p>
+          <h2 class="centered borderBottom pb nm">
+            <a href="{{ post.url }}">
+              {% if post.logo %}
+              <img src="{{post.logo}}" alt="{{ post.title }}" />
+              {% else %}
+                {{ post.title }}
+              {% endif %}
+            </a>
+          </h2>
+          <p class="borderBottom bmb"><img class="block" src="{{post.image}}" alt="" /></p>
+          <p class="bmb">{{ post.tagline }}</p>
+          <p class="centered bmb"><a class="button image fixed100" href="{{ post.url }}">Learn More<img src="/image/button_arrow.png" alt="&raquo;" /></a></p>
+          <p class="centered nm"><a class="button image fixed100" href="{{ post.github }}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
         </section>
+      {% endfor %}
       
         <section class="fl middle">
-          <h2 class="centered borderBottom pb nm"><a href="#"><img src="image/project_worm.png" alt="Worm" /></a></h2>
+          <h2 class="centered borderBottom pb nm"><a href="#"><img src="/image/project_worm.png" alt="Worm" /></a></h2>
           <p class="borderBottom bmb"><img class="block" src="http://www.placekitten.com/270/220" alt="" /></p>
           <p class="bmb">WORM is a straightforward and powerful Object Relation Mapping (ORM) system. WORM is able to generate object-oriented code to handle any situation and any database schema. </p>
           <p class="centered bmb"><a class="button image fixed100" href="#">Learn More<img src="image/button_arrow.png" alt="&raquo;" /></a></p>
