@@ -1,0 +1,431 @@
+/* Commonly-Used Classes 
+------------------------------------------------------*/
+
+h1, h2, h3, h4, p, div.list, blockquote, .default {
+  float: left;
+  display: inline;
+  width: 100%;
+  height: auto;
+}
+
+.html h1, .html h2, .html h3, .html h4, .html p, .html blockquote, .html ol, .html ul {
+  float: none !important;
+  display: block !important;
+  width: auto !important;
+  margin-bottom: 10px;
+}
+
+.html ul br { display: none; }
+.html ul li br { display: inline; }
+
+.html table {
+  border-collapse: collapse;
+  display: table !important;
+  float: none !important;
+  margin: 0px 0px 15px 0px !important;
+  width: 100% !important;;
+}
+
+.html table th {
+  background: #d6caba;
+  font-weight: bold;
+}
+
+.html table th,
+.html table td {
+  border: solid 1px #aa9988; 
+  padding: 8px;
+}
+
+.html table tr:nth-child(odd) td { background: #e8ddcc; }
+
+.html ul.tabs { list-style: none; margin: 0px; padding: 0px; position: relative; z-index: 10; }
+.html ul.tabs li { display: inline-block; height: auto; margin: 0px 0px 0px 5px; padding: 0px; width: auto;  }
+.html ul.tabs li a:link, .html ul.tabs li a:visited { background: #ffffff; border: solid 1px #ddcccc; color: #333333; display: block; padding: 8px 10px; text-align: center; text-decoration: none; -moz-border-radius: 8px 8px 0px 0px; -webkit-border-radius: 8px 8px 0px 0px; border-radius: 8px 8px 0px 0px; }
+.html ul.tabs li a:hover, .html ul.tabs li a:active { background: #ddcccc; border-color: #aa9999; color: #111111; }
+.html ul.tabs li a.here { border-bottom-color: #ffffff !important; }
+.html ul.tabs p { display: none !important; }
+
+.wrapper {
+  background: transparent;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.body {
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  height: auto;
+  line-height: 16px;
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* Buttons 
+------------------------------------------------------*/
+
+a.button:link,
+a.button:visited,
+input[type='submit'] {
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 0px;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 15px 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  -moz-box-shadow: 0px 2px 0px #333333;
+  -webkit-box-shadow: 0px 2px 0px #333333;
+  box-shadow: 0px 2px 0px #333333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #bbbbbb;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #bbbbbb), color-stop(1.00, #f8f8f8));
+  background-image: -moz-linear-gradient(center bottom, #bbbbbb 1%, #f8f8f8 100%);
+}
+
+a.button:hover,
+a.button:active,
+input[type='submit']:hover {
+  position: relative;
+  top: 2px;
+  background-color: #f8f8f8;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #dddddd), color-stop(1.00, #ffffff));
+  background-image: -moz-linear-gradient(center bottom, #dddddd 1%, #ffffff 100%);
+  -moz-box-shadow: 0px 0px 0px #333333;
+  -webkit-box-shadow: 0px 0px 0px #333333;
+  box-shadow: 0px 0px 0px #333333;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#cccccc')"; /* For IE 8 */
+}
+
+a.button.red:link, a.button.red:visited { 
+  background-color: #991100; 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #770000), color-stop(1.00, #991100));
+  background-image: -moz-linear-gradient(center bottom, #770000 1%, #991100 100%);
+}
+a.button.red:hover, a.button.red:active { 
+  background-color: #aa2211; 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #880000), color-stop(1.00, #aa2211));
+  background-image: -moz-linear-gradient(center bottom, #880000 1%, #aa2211 100%);
+}
+
+a.button.blue:link, a.button.blue:visited { background-color: #005A99; }
+a.button.blue:hover, a.button.blue:active { background-color: #116aaa; }
+
+/* Lists 
+------------------------------------------------------*/
+ul, ol {
+  margin: 0px;}
+
+ul {
+  list-style-type: square;
+  padding: 0px 0px 0px 18px;
+}
+
+ol {
+  list-style: decimal;
+  font-weight: bold;
+  padding: 0px 0px 0px 28px;  
+} 
+
+ul li {
+  padding: 0px 0px 8px 0px;
+  margin: 0px;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ol li {
+  padding: 0px 0px 8px 0px;
+  margin: 0px;
+  font-size: 100%;
+}
+
+ul li ul {
+  margin: 4px 0px;
+  padding: 0px 0px 0px 18px;
+}
+
+ol li ol {
+  margin: 4px 0px;
+  padding: 0px 0px 0px 18px;  
+}
+
+ul li ul li, ol li ol li {
+  font-size: 85%;
+  padding: 0px 0px 4px 0px;
+  margin: 0px;
+}
+
+ul li ul li ul li, ol li ol li ol li {
+  font-size: 85%;
+  padding: 0px 0px 4px 0px;
+  margin: 0px;
+}
+
+
+/* Tableless Table 
+------------------------------------------------------*/
+div.tr {
+  float: left;
+  display: inline;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+div.th {
+  float: left;
+  display: inline;
+  width: 30%;
+  height: auto;
+  margin: 0px;
+  padding: 4px 0px 0px 0px;
+}
+
+div.td {
+  float: right;
+  display: inline;
+  width: 65%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+  
+  
+/* Columns 
+------------------------------------------------------*/
+.half { width: 50%; }
+.third { width: 30%; }
+.twoThirds { width: 65%; }
+.full { width: 100%;}
+.quarter { width: 22%; }
+.threeQuarters { width: 73%; }
+.sixth { width: 160px; }
+.seventh { width: 140px; }
+.eighth { width: 120px; }
+
+
+/* Blockquote
+------------------------------------------------------*/
+
+blockquote {
+  background: #ddccbb;
+  padding: 10px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+blockquote p { 
+  margin: 0px !important;
+}
+
+
+/* HR 
+------------------------------------------------------*/
+
+div.hr {
+  float: left;
+  display: inline;
+  width: 100%;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 0px 15px 0px;
+  border-bottom: solid 1px #fa9b00;
+}
+
+div.hr.dotted {
+  border-bottom: dotted 1px #fa9b00 !important;
+}
+
+div.hr.dashed {
+  border-bottom: dashed 1px #fa9b00 !important;
+}
+
+div.hr.dashed.white {
+  border-bottom: dashed 1px #ffffff !important;
+}
+
+div.hr.double {
+  border-bottom: solid 2px #fa9b00 !important;
+}
+
+
+/* Clearfix 
+------------------------------------------------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.clearfix {
+  display: inline-block; /* "inline-block" is an invalid CSS display property; necessary for IE clearfix support */
+}
+ 
+html[xmlns] .clearfix {
+  display: block;
+}
+ 
+* html .clearfix {
+  height: 1%;
+}
+
+
+/* CSS3 Drop Shadow
+------------------------------------------------------*/
+
+.shadow {
+  -moz-box-shadow: 0px 2px 5px #666666;
+  -webkit-box-shadow: 0px 2px 5px #666666;
+  box-shadow: 0px 2px 5px #666666;
+}
+
+.flatshadow {
+  -moz-box-shadow: 0px 0px 8px #999999;
+  -webkit-box-shadow: 0px 0px 8px #999999;
+  box-shadow: 0px 0px 8px #999999;
+}
+
+.textshadow {
+  text-shadow: #999999 0px 2px 0px;
+}
+
+.dktextshadow {
+  text-shadow: #333333 0px 1px 0px;
+}
+
+.lttextshadow {
+  text-shadow: #bbbbbb 0px 3px 3px;
+}
+
+
+/* CSS3 Rounded Corners
+------------------------------------------------------*/
+
+.rounded {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.rounded2px {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+/* Opaque
+------------------------------------------------------*/
+
+.fade, .opaque {
+  opacity: 0.5;
+  filter:alpha(opacity=50);
+  /* filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); */
+  position: relative;
+  z-index: 1;
+}
+  
+/* Common Classes 
+------------------------------------------------------*/
+
+.fl { float: left !important; }
+.fr { float: right !important; }
+.fn { float: none !important; }
+.inline { display: inline; }
+.block { display: block; }
+.cl { clear: left; }
+.cr { clear: right; }
+
+.noborder { border: 0px !important; }
+
+.centered { text-align: center; }
+.justified { text-align: justify; }
+
+.noline { text-decoration: none !important; }
+.underline { text-decoration: underline !important; }
+
+.centered img { display: inline; margin-left: auto; margin-right: auto; }
+.ar { text-align: right; }
+.nobold { font-weight: normal !important; }
+
+.relative { position: relative !important; }
+.static { position: static !important; }
+
+.hover { cursor: pointer; }
+
+.mb { margin-bottom: 10px !important; }
+.mt { margin-top: 5px !important; }
+.ml { margin-left: 10px !important; }
+.mr { margin-right: 10px !important; }
+.nm { margin: 0px !important; }
+.hm { margin-bottom: 5px !important; }
+
+.sm { margin-bottom: 2px !important; }
+.hm { margin-bottom: 5px !important; }
+
+.sml { margin-left: 4px !important; }
+.smr { margin-right: 4px !important; }
+.smt { margin-top: 4px !important; }
+
+.bmb { margin-bottom: 20px !important; }
+.bml { margin-left: 20px !important; }
+.bmt { margin-top: 30px !important; }
+.bmr { margin-right: 30px !important; }
+
+.gmb { margin-bottom: 50px !important; }
+
+.bpt { padding-top: 20px; }
+.bpb { padding-bottom: 20px; }
+
+.pt  { padding-top: 10px; }
+.pb  { padding-bottom: 10px; }
+
+.tiny { font-size: 10px; line-height: 12px; }
+.smaller { font-size: 11px; line-height: 14px; }
+.small { font-size: 12px; line-height: 18px; }
+.normal { font-size: 14px; line-height: 20px; }
+.medium { font-size: 18px; line-height: 24px; }
+.big { font-size: 24px; line-height: 30px; }
+.huge { font-size: 40px; line-height: 45px; }
+
+.purple { color: #6f6391; }
+.teal { color: #18a9c0; }
+.yellow { color: #fbb03f; }
+.orange { color: #f05513; }
+.blue { color: #538097; }
+.green { color: #92c74c !important; }
+.pink { color: #e17daa; }
+.red { color: #a53a3a; }
+.dkgrey { color: #444444; }
+.ltgrey { color: #aaaaaa; }
+.grey { color: #7c725e; }
+.black { color: #111111 !important; }
+.white { color: #ffffff; }
+
+.mono { font-family: monospace; }
+
+strong ,.strong { font-weight: bold; }
+em, .em { font-style: italic; }
+sup { position: relative; top: -0.5em; font-size: 60% !important; }
+
+.error, .errors li, .leftNav .errors li { color: #cc2222; }
+
+.ui-datepicker { z-index: 5000 }  
