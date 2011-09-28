@@ -1,0 +1,45 @@
+---
+layout: default
+title: Fusionborg projects
+---
+  <header id="header">
+    <div class="body" id="internal">
+      <a href="/"><img src="/image/logo.png" alt="fusionbox.org: it's what's cookin!" class="logo" />
+        
+      <nav id="top">
+        <a href="/">HOME</a>
+        <a href="/projects/">PROJECTS</a>
+        <a href="/blog/">THE NERD HUB</a>
+        <a href="#">CAREERS</a>
+        <a href="#">CONTACT</a>
+        <a href="http://www.fusionbox.com/">FUSIONBOX.COM</a>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="content">
+    <div class="body">
+      
+      <section class="main fl">
+        <p class="breadcrumb">Home // Projects</p>
+        <h1>Projects</h1>
+      {% for post in site.categories.projects %}
+        <section class="fl">
+          <h2 class="centered borderBottom pb nm">
+            <a href="{{ post.url }}">
+              {% if post.logo %}
+              <img src="{{post.logo}}" alt="{{ post.title }}" />
+              {% else %}
+                {{ post.title }}
+              {% endif %}
+            </a>
+          </h2>
+          <p class="borderBottom bmb"><img class="block" src="{{post.image}}" alt="" /></p>
+          <p class="bmb">{{ post.tagline }}</p>
+          <p class="centered bmb"><a class="button image fixed100" href="{{ post.url }}">Learn More<img src="/image/button_arrow.png" alt="&raquo;" /></a></p>
+          <p class="centered nm"><a class="button image fixed100" href="{{ post.github }}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
+        </section>
+      {% endfor %}
+      </section>
+    </div>
+  </section>

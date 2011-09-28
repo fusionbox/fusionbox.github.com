@@ -1,0 +1,34 @@
+---
+layout: default
+title: Fusionborg blog
+---
+  <header id="header">
+    <div class="body" id="internal">
+      <a href="/"><img src="/image/logo.png" alt="fusionbox.org: it's what's cookin!" class="logo" />
+        
+      <nav id="top">
+        <a href="/">HOME</a>
+        <a href="/projects/">PROJECTS</a>
+        <a href="/blog/">THE NERD HUB</a>
+        <a href="#">CAREERS</a>
+        <a href="#">CONTACT</a>
+        <a href="http://www.fusionbox.com/">FUSIONBOX.COM</a>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="content">
+    <div class="body">
+      
+      <section class="main fl">
+        <p class="breadcrumb">Home // Blog</p>
+        <h1>The nerd hub</h1>
+        {% for post in site.categories.blog %}
+        <article>
+          <h3><a href="{{post.url}}" class="white noline">{{ post.title }}</a></h3>
+          <p class="mb">{{ post.tagline }}</p>
+        </article>
+        {% endfor %}
+      </section>
+    </div>
+  </section>

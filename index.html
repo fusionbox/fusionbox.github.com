@@ -7,12 +7,12 @@ title: Fusionborg
       <a href="#"><img src="image/logo.png" alt="fusionbox.org: it's what's cookin!" class="logo" />
         
       <nav id="top">
-        <a href="#">HOME</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">THE NERD HUB</a>
+        <a href="/">HOME</a>
+        <a href="/projects/">PROJECTS</a>
+        <a href="/blog/">THE NERD HUB</a>
         <a href="#">CAREERS</a>
         <a href="#">CONTACT</a>
-        <a href="#">FUSIONBOX.COM</a>
+        <a href="http://www.fusionbox.com/">FUSIONBOX.COM</a>
       </nav>
     
       <span id="arrow1" class="arrow px1"></span>
@@ -47,8 +47,8 @@ title: Fusionborg
   <section id="content">
     <div class="body">
       
-      <section class="main fl">
-      {% for post in site.categories.projects %}
+      <section class="main">
+      {% for post in site.categories.projects limit:2 %}
         <section class="fl">
           <h2 class="centered borderBottom pb nm">
             <a href="{{ post.url }}">
@@ -66,35 +66,21 @@ title: Fusionborg
         </section>
       {% endfor %}
       
-        <section class="fl middle">
-          <h2 class="centered borderBottom pb nm"><a href="#"><img src="/image/project_worm.png" alt="Worm" /></a></h2>
-          <p class="borderBottom bmb"><img class="block" src="http://www.placekitten.com/270/220" alt="" /></p>
-          <p class="bmb">WORM is a straightforward and powerful Object Relation Mapping (ORM) system. WORM is able to generate object-oriented code to handle any situation and any database schema. </p>
-          <p class="centered bmb"><a class="button image fixed100" href="#">Learn More<img src="image/button_arrow.png" alt="&raquo;" /></a></p>
-          <p class="centered nm"><a class="button image fixed100" href="#">Find it on<img src="image/github.gif" alt="github" /></a></p>
-        </section>
-      
       </section>
       
       <section class="fr">
-        <h2 class="centered borderBottom pb"><a href="#"><img src="image/project_hub.png" alt="The Nerd Hub" /></a></h2>
+        <h2 class="centered borderBottom pb"><a href="/blog/"><img src="image/project_hub.png" alt="The Nerd Hub" /></a></h2>
         
+        {% for post in site.categories.blog limit:3%}
         <article>
-          <h3><a href="#" class="white noline">News Headline</a></h3>
-          <p class="mb">WORM is a straightforward and powerful Object Relation Mapping (ORM) system. WORM is able to generate object-oriented code to handle any situation and any database schema. </p>
+          <h3><a href="{{post.url}}" class="white noline">{{ post.title }}</a></h3>
+          <p class="mb">{{ post.tagline }}</p>
         </article>
-        <article>
-          <h3><a href="#" class="white noline">News Headline</a></h3>
-          <p class="mb">WORM is a straightforward and powerful Object Relation Mapping (ORM) system. WORM is able to generate object-oriented code to handle any situation and any database schema. </p>
-        </article>
-        <article>
-          <h3><a href="#" class="white noline">News Headline</a></h3>
-          <p class="mb">WORM is a straightforward and powerful Object Relation Mapping (ORM) system. WORM is able to generate object-oriented code to handle any situation and any database schema. </p>
-        </article>
+        {% endfor %}
         
         <div class="hr"></div>
           
-        <p class="centered nm"><a class="button" href="#">More from the Nerd Hub</a></p>
+        <p class="centered nm"><a class="button" href="/blog/">More from the Nerd Hub</a></p>
         
       </section>
     </div>
