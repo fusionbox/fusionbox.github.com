@@ -39,10 +39,10 @@ layout: default
       
       <section class="fr">
         <h2 class="centered borderBottom pb"><a href="#"><img src="/image/project_hub.png" alt="The Nerd Hub" /></a></h2>
-        {% for new_post in site.categories.blog limit:3%}
+        {% for post in site.categories.blog limit:3%}
         <article>
-          <h3><a href="{{post.url}}" class="white noline">{{ new_post.title }}</a></h3>
-          <p class="mb">{{ new_post.tagline }}</p>
+          <h3><a href="{{post.url}}" class="white noline">{{ post.title }}</a></h3>
+          <p class="mb">{{ post.tagline }}</p>
         </article>
         {% endfor %}
         <div class="hr"></div>
