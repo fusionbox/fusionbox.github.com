@@ -121,6 +121,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 #content article { display:inline; float: left; height: auto; margin: 0px 0px 10px 0px; width: 100%; }
 
 #content section.main { float: left; width: 615px; }
+#content section.main.full { width: 100%; }
 
 #content section.main section.project { float: left; margin-right: 75px; }
 #content section.main section.project:nth-child(3n-1) { margin-right: 0px; }
