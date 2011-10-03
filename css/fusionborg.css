@@ -122,6 +122,11 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 
 #content section.main { width: 615px; }
 
+#content section.main section.project {
+  float: left;
+  margin-right: 75px;
+}
+
 
 /* Footer
 ------------------------------------------------------*/
