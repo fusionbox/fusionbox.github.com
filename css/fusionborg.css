@@ -185,11 +185,12 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
   #content section.main section.project { clear: both; margin-bottom: 30px; }
   #content section.main section.project h2 { text-align: left !important; }
   #content section.main section.project p.thumbnail { border-bottom: 0px !important; margin-bottom: 20px; }
-  #content section.main section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; width: 50% !important; }
+  #content section.main section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; width: auto !important; }
   #content section.main section.project p.action { clear: both; }
   #content section.main section.project p.action a:nth-child(1) { margin: 0px 5px 10px 5px; }
   #content section.main section.project p.action a:nth-child(2) { margin: 0px 5px 10px 5px; }
   
+  #content section.main.full section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; width: auto !important; }
   #content section.main.full section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; }
   
   
