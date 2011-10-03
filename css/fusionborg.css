@@ -132,6 +132,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 #content section.main section.project h2 { border-bottom: solid 1px #fa9b00; margin: 0px; padding-bottom: 10px; text-align: center; }
 #content section.main section.project p.thumbnail { border-bottom: solid 1px #fa9b00; margin-bottom: 20px; }
 #content section.main section.project p.tagline { margin-bottom: 20px; }
+#content section.main.full section.project p.action { text-align: center; }
 
 
 /* Footer
@@ -184,6 +185,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
   #content section.main.full section.project h2 { text-align: left !important; }
   #content section.main.full section.project p.thumbnail { border-bottom: 0px !important; margin-bottom: 20px; }
   #content section.main.full section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; }
+  #content section.main.full section.project p.action { text-align: left; }
   
   #footer section, article, h1, h2, h3, h4, p { 
     display: block !important;
