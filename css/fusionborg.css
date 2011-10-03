@@ -126,7 +126,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 #content section.main section.project:nth-child(2) { margin-right: 0px; }
 
 
-#content section.main section.hub { float: right; }
+#content section.hub { float: right; }
 
 
 
@@ -152,7 +152,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
     width: 90% !important;
   }
   
-  #content section.project { 
+  #content section.main { 
     margin: 0px 0px 30px 0px !important;
     width: 60% !important;
   }
@@ -162,7 +162,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
     width: 35% !important;
   }
   
-  #content section.fl section, #content section.fr section { 
+  #content section.main section.project, #content section.hub { 
     display: block !important;
     float: none !important;
     width: 100% !important;
