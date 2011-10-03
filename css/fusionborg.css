@@ -162,7 +162,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
     width: 35% !important;
   }
   
-  #content section.main section.project, #content section.hub { 
+  #content section.main section.project, #content section.hub article{ 
     display: block !important;
     float: none !important;
     width: 100% !important;
