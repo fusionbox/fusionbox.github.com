@@ -127,7 +127,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 #content section.main section.project:nth-child(3n) { float: right; margin-right: 0px; }
 
 #content section.hub { float: right; }
-
+#content section.hub h2 { border-bottom: solid 1px #fa9b00; padding-bottom: 10px; text-align: center; }
 
 #content section.main section.project h2 { border-bottom: solid 1px #fa9b00; margin: 0px; padding-bottom: 10px; text-align: center; }
 #content section.main section.project p.thumbnail { border-bottom: solid 1px #fa9b00; margin-bottom: 20px; }
