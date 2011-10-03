@@ -184,8 +184,14 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
   #content section.main section.project { clear: both; margin-bottom: 30px; }
   #content section.main section.project h2 { text-align: left !important; }
   #content section.main section.project p.thumbnail { border-bottom: 0px !important; margin-bottom: 20px; }
-  #content section.main section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; }
-  #content section.main section.project p.action { text-align: left; }
+  #content section.main section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; width: 50% !important; }
+  #content section.main section.project p.action { clear: both; }
+  
+  #content section.main.full section.project { clear: both; margin-bottom: 30px; }
+  #content section.main.full section.project h2 { text-align: left !important; }
+  #content section.main.full section.project p.thumbnail { border-bottom: 0px !important; margin-bottom: 20px; }
+  #content section.main.full section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; }
+  #content section.main.full section.project p.action { text-align: left; }
   
   
   #footer section, article, h1, h2, h3, h4, p { 
