@@ -50,7 +50,7 @@ title: Fusionborg
       <section class="main">
       {% for post in site.categories.projects limit:2 %}
         <section class="project">
-          <h2 class="centered borderBottom pb nm">
+          <h2>
             <a href="{{ post.url }}">
               {% if post.logo %}
               <img src="{{post.logo}}" alt="{{ post.title }}" />
@@ -59,8 +59,8 @@ title: Fusionborg
               {% endif %}
             </a>
           </h2>
-          <p class="borderBottom bmb"><img class="block" src="{{post.image}}" alt="" /></p>
-          <p class="bmb">{{ post.tagline }}</p>
+          <p class="thumbnail"><img class="block" src="{{post.image}}" alt="" /></p>
+          <p class="tagline">{{ post.tagline }}</p>
           <p class="centered bmb"><a class="button image fixed100" href="{{ post.url }}">Learn More<img src="/image/button_arrow.png" alt="&raquo;" /></a></p>
           <p class="centered nm"><a class="button image fixed100" href="{{ post.github }}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
         </section>
