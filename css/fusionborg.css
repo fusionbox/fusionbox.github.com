@@ -176,7 +176,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
     width: 100% !important;
   }
   #footer section.rap { display: inline !important; float: left !important; margin: 0px 0px 30px 0px !important;width: 45% !important;}
-  #footer section.work { margin: 0px !important; width: 100% !important;}
+  #footer section.work { display: inline !important; float: left !important; margin: 0px !important; width: 100% !important;}
   #footer section.visit { display: inline !important; float: right !important; margin: 0px 0px 30px 0px !important;width: 45% !important;}
   #footer section { margin: 0px !important; }
   #footer section input[type='text'], #footer section input[type='submit'], #footer section select, #footer section textarea { margin: 0 auto !important;  }
