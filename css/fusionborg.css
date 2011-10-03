@@ -231,6 +231,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
   #content section.main.full section.project h2 { text-align: left !important; }
   #content section.main.full section.project p.thumbnail { border-bottom: 0px !important; margin-bottom: 20px; }
   #content section.main.full section.project p.thumbnail img { float: left !important; margin: 0px 20px 20px 0px !important; width: auto !important; }
+  #content section.main.full section.project p.action { clear: both; }
   
   header .body { height: auto; padding: 25px 0px; background: none; }
   header .arrow { display:none; }
