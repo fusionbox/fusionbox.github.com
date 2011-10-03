@@ -135,8 +135,10 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 
 #footer  { display: block; color: #ffffff; font-size: 60px; width: 100%; text-align: center; background: transparent; border-top: solid 3px white; overflow: hidden; position: relative; }
 #footer .body { height: auto; padding: 40px 0px 10px 0px; }
-#footer section { width: 270px; }
-#footer section.middle { margin-left: 75px; }
+
+#footer section { float: left; width: 270px; }
+#footer section.work { margin-left: 75px; }
+#footer section.visit { float: right; margin-left: 75px; }
 #footer p { color: #ffffff; }
 
 #footerImage { width: 100%; position: fixed; bottom: 0; left: 0; min-width: 1100px; z-index: 0; }
