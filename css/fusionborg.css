@@ -214,5 +214,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
   img.block { width: 100%; }
 
   #footerImage { bottom: 0 !important; left:-500px !important; width:2000px !important; }
-
 }
+
+p.github a { margin-top: 50px !important; }
+code { font-family: monospace; }

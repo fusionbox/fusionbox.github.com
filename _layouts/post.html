@@ -20,7 +20,7 @@ layout: default
     <div class="body">
       
       <section class="main fl">
-        <p class="breadcrumb">Home // Projects // {{ page.title }}</p>
+        <p class="breadcrumb">Home // {{ page.categories|capitalize }} // {{ page.title }}</p>
         <h1>
           {% if page.logo %}
           <img src="{{page.logo}}" alt="{{page.title}}" />
@@ -33,7 +33,7 @@ layout: default
           </ul>        
         </div>
         {% if page.github %}
-        <p class="centered nm"><a class="button image fixed100 ml" href="{{page.github}}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
+        <p class="github centered nm"><a class="button image fixed100 ml" href="{{page.github}}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
         {% endif %}
       </section>
       
