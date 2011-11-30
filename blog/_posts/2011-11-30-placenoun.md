@@ -1,8 +1,8 @@
 ---
-title: placenoun
+title: Placenoun
 layout: post
-tagline: Making placeholder images more fun
-github: https://github.com/aaronmerriam/Placenoun
+author: Aaron Merriam
+email: amerriam@fusionbox.com
 ---
 
 When I started at fusionbox, I was delighted to find my first set of wireframes
