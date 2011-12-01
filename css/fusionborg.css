@@ -258,3 +258,4 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 p.github a { margin-top: 50px !important; }
 code { font-family: monospace; }
 section.rap { display: none !important }
+.author { font-size: 1.2em; color: #ddd; }
