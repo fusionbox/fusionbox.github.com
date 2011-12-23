@@ -12,9 +12,9 @@ We have known for some time that Googlebot can see JavaScript. One of the first 
 To create an example, the author found a URL that uses a JavaScript redirect to shoot the user to another page. Google is not supposed to be able to see JavaScript redirects like this. In fact, SEOs would use JavaScript to hide outbound links, so Googlebot can not see them. This allowed pagerank sculpting even after Google announced that it still spends pagerank on rel=nofollow links, even though the linked-to pages do not receive any of that rank. 
 
 This is what he observed:
->The indexed text and Instant Preview being displayed \[in Google's SERP\] ended up matching the redirect destination, while the URL displayed matched the source of the redirect.
->This suggests that not only is GoogleBot executing JavaScript, it seems to be following JavaScript Redirects and treating them as 302 Redirect. This isn’t the most interesting part though; it seems Bing is doing this too!
->http://www.distilled.net/blog/seo/google-stop-playing-the-jig-is-still-up-guest-post/
+*The indexed text and Instant Preview being displayed \[in Google's SERP\] ended up matching the redirect destination, while the URL displayed matched the source of the redirect.
+This suggests that not only is GoogleBot executing JavaScript, it seems to be following JavaScript Redirects and treating them as 302 Redirect. This isn’t the most interesting part though; it seems Bing is doing this too!
+http://www.distilled.net/blog/seo/google-stop-playing-the-jig-is-still-up-guest-post/*
 
 Fusionbox sites are built with usability as a much higher priority than individual keyword rankings and doesn't put a lot of salt in questionable, albeit snappy, little tricks like masking links using JavaScript. 
 It's safe to say that sites built by us don't need to be worried about these kinds of things potentially harming our clients. Still, this is a pretty big revelation that will change the way that SEO is done throughout most of the industry.
