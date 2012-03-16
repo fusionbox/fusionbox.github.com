@@ -5,6 +5,7 @@ tagline: finding an element made even simpler
 github: http://github.com/fusionbox/jquery-nearest
 ---
 ## The Problem
+
 You get your HTML from the designer, and you start plugging your buttons
 together with jquery.  Eventually, you'll have a situation where you have *lots*
 of similar items on a page (like "remove" buttons on every row of a table).
@@ -25,6 +26,7 @@ we're talkin’!
 And that's where `jquery.nearest` is your friend.
 
 ## The Solution
+
 `jquery.nearest.js` Is just a quick way to go up the DOM, and back down it, finding the "nearest"
 match.  If you hand it a container selector, it will start there, in which case it is *pretty much*
 a substitution for `$(start).closest(container).find(search)`, except it will return the container
@@ -34,7 +36,7 @@ itself if it matches your `search` selector.  `find()` does not.
 
 ### HTML
 
-```jinja
+{% highlight jinja2 %}
 <div class="container">
 {% for book in books %}
   <div class="book">
@@ -49,11 +51,11 @@ itself if it matches your `search` selector.  `find()` does not.
   </div>
 {% endfor %}
 </div>
-```
+{% endhighlight %}
 
 ### JavaScript
 
-```javascript
+{% highlight javascript %}
 $('.remove').click(function()
 {
   // why are we only removing .information?  I have no idea.
@@ -61,4 +63,4 @@ $('.remove').click(function()
   // if you want to limit the search:
   $(this).nearest('.information', '.book').remove();
 })
-```
+{% endhighlight %}
