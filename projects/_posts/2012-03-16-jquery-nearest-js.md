@@ -36,12 +36,12 @@ itself if it matches your `search` selector.  `find()` does not.
 
 ### HTML
 
-{% highlight jinja2 %}
+{% highlight html %}
 <div class="container">
   <div class="book">
     <span class="label">Book:</span>
     <div class="information">
-      <span class="title">{{ book.title }}</span>
+      <span class="title">Flibbity Jibbit</span>
     </div>
     <div class="actions">
       <span class="remove">remove</span>
