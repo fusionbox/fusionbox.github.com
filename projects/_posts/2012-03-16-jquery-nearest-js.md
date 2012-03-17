@@ -36,7 +36,7 @@ itself if it matches your `search` selector.  `find()` does not.
 
 ### HTML
 
-{% highlight jinja2 %}
+{% highlight jinja2 %}{% raw %}
 <div class="container">
 {% for book in books %}
   <div class="book">
@@ -51,7 +51,7 @@ itself if it matches your `search` selector.  `find()` does not.
   </div>
 {% endfor %}
 </div>
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 ### JavaScript
 
