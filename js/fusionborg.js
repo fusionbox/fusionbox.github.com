@@ -2,6 +2,10 @@ $(document).ready(function(){
     
   $("a[href*='http://']:not([href*='"+location.hostname+"'])").attr("target","_blank");  
   
+  $("#content section.main section.project:nth-child(3n+1)").addClass("first");
+  $("#content section.main section.project:nth-child(3n)").addClass("last");
+  $("#content section.main section.project:nth-child(3n-1)").addClass("mid");
+  
   $('#content').scrollParallax({speed: -0.75, axis: 'y'});
   //$('#footer').scrollParallax({speed: 0.5, axis: 'y'});
   
