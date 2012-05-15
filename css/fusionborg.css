@@ -112,7 +112,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 /* Content
 ------------------------------------------------------*/
 
-#content { display: block; color: #ffffff; font-size: 60px; width: 100%; text-align: center; background: #393c3d url("../image/middle_bg.png") repeat-x center 500px; border-top: solid 3px white; overflow: hidden; position: relative; }
+#content { display: block; color: #ffffff; font-size: 60px; min-height: 400px; width: 100%; text-align: center; background: #393c3d url("../image/middle_bg.png") repeat-x center 500px; border-top: solid 3px white; overflow: hidden; position: relative; }
 #content .body { height: auto; padding: 40px 0px; }
 
 #content section { width: 270px; }
