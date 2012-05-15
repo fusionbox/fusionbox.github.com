@@ -1,45 +1,52 @@
 ---
 layout: default
-title: Fusionborg projects
+title: Fusionbox Open Source Projects | Fusionbox.org
+description: Discover our open source projects, hacks, tricks and more at Fusionbox.org & the Nerd Hub.
+keywords: django projects, open source projects, python projects, seo tools, denver web development projects, python utilities
 ---
   <header id="header">
     <div class="body" id="internal">
       <a href="/"><img src="/image/logo.png" alt="fusionbox.org: it's what's cookin!" class="logo" />
-        
+
       <nav id="top">
         <a href="/">HOME</a>
         <a href="/projects/">PROJECTS</a>
         <a href="/blog/">THE NERD HUB</a>
-        <a href="#">CAREERS</a>
-        <a href="#">CONTACT</a>
+        <a href="//fusionbox.com/careers/">CAREERS</a>
+        <a href="//fusionbox.com/contact/">CONTACT</a>
         <a href="http://www.fusionbox.com/">FUSIONBOX.COM</a>
       </nav>
     </div>
   </header>
-  
+
   <section id="content">
     <div class="body">
-      
-      <section class="main fl">
+
+      <section class="main full">
         <p class="breadcrumb">Home // Projects</p>
         <h1>Projects</h1>
+        
+        <div class="projects">
       {% for post in site.categories.projects %}
-        <section class="fl">
-          <h2 class="centered borderBottom pb nm">
+        <section class="project">
+          <h2>
             <a href="{{ post.url }}">
               {% if post.logo %}
-              <img src="{{post.logo}}" alt="{{ post.title }}" />
+              <img src="{{ post.logo }}" alt="{{ post.title }}" />
               {% else %}
                 {{ post.title }}
               {% endif %}
             </a>
           </h2>
-          <p class="borderBottom bmb"><img class="block" src="{{post.image}}" alt="" /></p>
-          <p class="bmb">{{ post.tagline }}</p>
-          <p class="centered bmb"><a class="button image fixed100" href="{{ post.url }}">Learn More<img src="/image/button_arrow.png" alt="&raquo;" /></a></p>
-          <p class="centered nm"><a class="button image fixed100" href="{{ post.github }}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
+          <p class="thumbnail"><img class="block" src="{{post.image}}" alt="" /></p>
+          <p class="tagline">{{ post.tagline }}</p>
+          <p class="action nm"><a class="button image fixed100" href="{{ post.url }}">Learn More<img src="/image/button_arrow.png" alt="&raquo;" /></a><a class="button image fixed100" href="{{ post.github }}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
         </section>
       {% endfor %}
+        </div>
+        
+      <p>Here you'll find a collection of our open source tools, projects and utilities. You'll see everything from helpful SEO tools &amp; Google Analytics hacks to python tricks and web development tools. Please <a href="http://www.fusionbox.com/">contact us</a> if you have questions, concerns or new ideas to add!</p>
       </section>
+      
     </div>
   </section>
