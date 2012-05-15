@@ -9,8 +9,6 @@ layout: default
         <a href="/">HOME</a>
         <a href="/projects/">PROJECTS</a>
         <a href="/blog/">THE NERD HUB</a>
-        <a href="#">CAREERS</a>
-        <a href="#">CONTACT</a>
         <a href="http://www.fusionbox.com/">FUSIONBOX.COM</a>
       </nav>
     </div>
@@ -20,7 +18,7 @@ layout: default
     <div class="body">
       
       <section class="main fl">
-        <p class="breadcrumb">Home // Projects // {{ page.title }}</p>
+        <p class="breadcrumb">Home // {{ page.categories|capitalize }} // {{ page.title }}</p>
         <h1>
           {% if page.logo %}
           <img src="{{page.logo}}" alt="{{page.title}}" />
@@ -28,12 +26,13 @@ layout: default
           {{ page.title }}
           {% endif %}
         </h1>
+        <h2 class="author">{{ page.author }}</h2>
         <div class="html default">
           {{ content }}
           </ul>        
         </div>
         {% if page.github %}
-        <p class="centered nm"><a class="button image fixed100 ml" href="{{page.github}}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
+        <p class="github centered nm"><a class="button image fixed100 ml" href="{{page.github}}">Find it on<img src="/image/github.gif" alt="github" /></a></p>
         {% endif %}
       </section>
       

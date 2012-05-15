@@ -308,7 +308,7 @@ html[xmlns] .clearfix {
 }
 
 .dktextshadow {
-  text-shadow: #333333 0px 1px 0px;
+  text-shadow: #000000 0px 1px 3px;
 }
 
 .lttextshadow {
@@ -428,4 +428,4 @@ sup { position: relative; top: -0.5em; font-size: 60% !important; }
 
 .error, .errors li, .leftNav .errors li { color: #cc2222; }
 
-.ui-datepicker { z-index: 5000 }  
+.ui-datepicker { z-index: 5000 }

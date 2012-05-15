@@ -122,9 +122,10 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 #content section.main { float: left; width: 615px; }
 #content section.main.full { width: 100%; }
 
-#content section.main section.project { float: left; margin-right: 75px; }
-#content section.main section.project:nth-child(3n-1) { margin-right: 0px; }
-#content section.main section.project:nth-child(3n) { float: right; margin-right: 0px; }
+#content section.main section.project { float: left; margin-right: 75px; margin-bottom: 30px; }
+#content section.main section.project.first  { clear: left; }
+#content section.main section.project.mid   { margin-right: 0px; }
+#content section.main section.project.last { clear: right; float: right; margin-right: 0px; }
 
 #content section.hub { float: right; }
 #content section.hub h2 { border-bottom: solid 1px #fa9b00; padding-bottom: 10px; text-align: center; }
@@ -143,8 +144,9 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
 #footer .body { height: auto; padding: 40px 0px 10px 0px; }
 
 #footer section { float: left; width: 270px; }
-#footer section.work { margin-left: 75px; }
-#footer section.visit { float: right; margin-left: 75px; }
+#footer section.rap { display: none; }
+#footer section.work { width: 615px; }
+#footer section.visit { float: right !important; }
 #footer p { color: #ffffff; }
 
 #footerImage { width: 100%; position: fixed; bottom: 0; left: 0; min-width: 1100px; z-index: 0; }
@@ -199,9 +201,9 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
     float: none !important;
     width: 100% !important;
   }
-  #footer section.rap { display: inline !important; float: left !important; margin: 0px 0px 30px 0px !important;width: 45% !important;}
-  #footer section.work { display: inline !important; float: left !important; margin: 0px !important; width: 100% !important;}
-  #footer section.visit { display: inline !important; float: right !important; margin: 0px 0px 30px 0px !important;width: 45% !important;}
+  #footer section.rap { display: none !important;}
+  #footer section.work { display: inline !important; float: left !important; margin: 0px !important; width: 50% !important;}
+  #footer section.visit { display: inline !important; float: right !important; margin: 0px 0px 30px 0px !important; width: 45% !important;}
   #footer section { margin: 0px !important; }
   #footer section input[type='text'], #footer section input[type='submit'], #footer section select, #footer section textarea { margin: 0 auto !important;  }
   #footerImage { bottom: 0 !important; left:-500px !important; width:2000px !important; }
@@ -243,6 +245,7 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
   header .arrow { display:none; }
   
   #footer section input[type='text'], #footer section input[type='submit'], #footer section select, #footer section textarea { margin: 0 auto !important;  }
+  #footer section.rap { display: none !important; }
   
   .logo { display: block !important; float: none !important; }
   nav { text-align: left !important; }
@@ -253,5 +256,8 @@ header #arrow25 { background-position: -1050px -300px; left: 1000px; top: 195px;
   img.block { width: 100%; }
 
   #footerImage { bottom: 0 !important; left:-500px !important; width:2000px !important; }
-
 }
+
+p.github a { margin-top: 50px !important; }
+code { font-family: monospace; }
+.author { font-size: 1.2em; color: #ddd; }
