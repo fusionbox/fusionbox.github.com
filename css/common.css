@@ -221,7 +221,9 @@ div.td {
 ------------------------------------------------------*/
 
 blockquote {
-  background: #ddccbb;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: serif;
+  font-size: 110%;
   padding: 10px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
