@@ -3,6 +3,7 @@ title: jquery-nearest
 layout: post
 tagline: finding an element made even simpler
 github: http://github.com/fusionbox/jquery-nearest
+logo: /image/project_jquery.png
 ---
 ## The Problem
 
