@@ -3,6 +3,7 @@ title: moment-isocalendar
 layout: post
 tagline: ISO Week Date support for Moment
 github: http://github.com/fusionbox/moment-isocalendar
+logo: /image/project_javascript.png
 ---
 We were creating a cool Backbone-powered weekly calendar application for a
 client and we decided to and we needed a library to deal with dates in
