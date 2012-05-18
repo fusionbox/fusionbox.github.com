@@ -3,7 +3,7 @@ title: jquery-multifile
 layout: post
 tagline: HTML file inputs suck...
 github: http://github.com/fusionbox/jquery-multifile
-logo: /image/project_jquery.png
+image: /image/project_jquery.png
 ---
 ## The Problem
 HTML file inputs suck... it is difficult to upload more than one file at a

@@ -3,7 +3,7 @@ title: django-fusionbox
 layout: post
 tagline: Common Django tools and patterns
 github: http://github.com/fusionbox/django-fusionbox
-logo: /image/project_django.png
+image: /image/project_django.png
 ---
 We wrote django-fusionbox to keep common Django patterns in one place.
 Currently features include a convenient static-template serving middleware, a

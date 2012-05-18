@@ -3,7 +3,7 @@ title: rubymotion-sugarcube
 layout: post
 tagline: Extensions to built-in Ruby class to make Rubymotion development more idiomatic
 github: http://github.com/fusionbox/sugarcube
-logo: /image/project_rubymotion.png
+image: /image/project_rubymotion.png
 ---
 Fusionbox is excited about the announcement of [Rubymotion][], and to celebrate
 we are providing a small library of extensions to the Ruby built-in classes
