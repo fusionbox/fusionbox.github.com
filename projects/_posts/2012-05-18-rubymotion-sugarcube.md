@@ -2,7 +2,7 @@
 title: rubymotion-sugarcube
 layout: post
 tagline: Extensions to built-in Ruby class to make Rubymotion development more idiomatic
-github: http://github.com/fusionbox/sugarcube
+github: http://github.com/rubymotion/sugarcube
 image: /image/project_rubymotion.png
 ---
 Fusionbox is excited about the announcement of [Rubymotion][], and to celebrate
@@ -73,6 +73,12 @@ Maybe that doesn't mean much to you, but to me, not having to bother with
 The [teacup][] framework inspired the creation of these snippets.  I ([Colin
 Thomas-Arnold][]) am an active member of that project, and I hope that we can
 benefit from sugarcube!  Who doesn't like a little sugar in their tea ;-)
+
+## SugarCube is now a Rubymotion Community project!
+
+The SugarCube project has gained a lot of traction in the Rubymotion community,
+so much so that we are moving the official repo into the rubymotion community
+repository, <https://github.com/rubymotion/sugarcube>.
 
 [Rubymotion]: http://rubymotion.com
 [teacup]: http://rubymotion.github.com/teacup
