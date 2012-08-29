@@ -82,4 +82,4 @@ repository, <https://github.com/rubymotion/sugarcube>.
 
 [Rubymotion]: http://rubymotion.com
 [teacup]: http://rubymotion.github.com/teacup
-[Colin Thomas-Arnold]: https://github.com/colinta
+[Colin Thomas-Arnold]: https://colinta.com/
