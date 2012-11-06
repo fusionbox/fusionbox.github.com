@@ -33,7 +33,7 @@ You can use it in any browser, even IE.
 ### Try it yourself
 
 <input multiple="multiple" type="file" name="files[]"/>
-<script type="text/javascript" src="https://raw.github.com/fusionbox/jquery-multifile/master/jquery.multifile.js">
+<script type="text/javascript" src="/js/jquery.multifile.js">
 /* prevent this tag from being closed xml style, not allowed in html */
 </script>
 <script type="text/javascript">
